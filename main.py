@@ -1,6 +1,10 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from controllers.music_controller import router as music_router
+<<<<<<< HEAD
+=======
+from controllers.auth_controller import router as auth_router
+>>>>>>> 7a52392 (backend updated)
 
 app = FastAPI()
 
@@ -21,3 +25,9 @@ async def health_check():
 
 # Include the music-related routes
 app.include_router(music_router, prefix="/music")
+<<<<<<< HEAD
+=======
+
+# Include the authentication-related routes
+app.include_router(auth_router, prefix="/auth")
+>>>>>>> 7a52392 (backend updated)
