@@ -29,11 +29,6 @@ class GenreRecommender:
                 'Album Name': row['Album Name'],
                 'Popularity': row['Popularity']
             }
-<<<<<<< HEAD
+
             for row in data.nlargest(top_n, 'Popularity').itertuples()
         ]
-=======
-            for _, row in data.nlargest(top_n, 'Popularity').iterrows()
-        ]
-
->>>>>>> 7a52392 (backend updated)

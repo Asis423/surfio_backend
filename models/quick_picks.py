@@ -4,11 +4,7 @@ from fastapi import HTTPException
 
 class QuickPicks:
     def __init__(self, data_file: str):
-<<<<<<< HEAD
         self.data = pd.read_csv(data_file)
-=======
-        self.data = pd.read_csv( data_file)
->>>>>>> 7a52392 (backend updated)
         
         # Predefined mood strings
         self.moods = [
